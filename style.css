@@ -1,0 +1,315 @@
+body {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+.navbar {
+  background: #0d0d0d !important;
+}
+
+.brand_logo {
+  width: 150px;
+  height: 100%;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link.active {
+  color: red !important;
+  border-bottom: 3px solid red;
+}
+
+.bg_image {
+  height: 650px;
+  background-image: url("assets/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  z-index: 1;
+}
+
+.bg_image::before {
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-color: #00010c;
+  opacity: 0.6;
+}
+
+#home .hero_content {
+  padding-top: 150px;
+}
+
+#home .hero_content .title {
+  font-size: 60px;
+  margin-bottom: 18px;
+  font-weight: 900;
+  background: linear-gradient(145deg, #f81f01 0%, #ee076e 100%);
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.white-text {
+  color: white;
+}
+
+.section_margin {
+  margin-top: 200px;
+}
+
+#service .card {
+  padding: 35px 14px;
+  background: #f6f6f6;
+  border-radius: 10px;
+  max-width: 420px;
+  margin: 15px 3px;
+}
+
+#service .card .card_icon {
+  margin-bottom: 23px;
+}
+
+#service .card .card_desc {
+  color: rgb(29 29 36 / 75%);
+  font-size: 18px;
+  line-height: 30px;
+}
+
+#service .card .card_title {
+  font-size: 1.5rem;
+}
+
+#about .about_img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+#contact .contact_img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#about .about_title,
+#portfolio .title,
+#blog .title,
+#team .title,
+#contact .title {
+  margin-bottom: 15px;
+  font-size: 31px;
+}
+
+#about .about_desc,
+#portfolio .desc,
+#portfolio .desc,
+#team .desc,
+#blog .desc,
+#contact .desc {
+  font-weight: 300;
+  color: #717173;
+  padding: 0;
+  font-size: 18px;
+}
+
+#about .about_sub .about_sub_title {
+  font-size: 30px;
+  color: #1f1f25;
+  line-height: 1.4074;
+}
+
+#about .about_sub .about_sub_desc {
+  font-weight: 300;
+  color: rgb(29 29 36 / 75%);
+  font-size: 18px;
+}
+
+#portfolio_numbers .num {
+  color: #f9004d;
+  font-size: 45px;
+  line-height: 56px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#testimonial .testimonial_big_text::before,
+#testimonial .testimonial_big_text::after {
+  content: '"';
+  font-size: 1rem;
+  font-family: emoji;
+}
+
+.testimonials_photos img {
+  width: 40px;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+
+#contact form input {
+  padding: 0 10px;
+  height: 50px;
+  border-radius: 5px;
+  background: transparent;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+  border: 2px solid #f9004d !important;
+  box-shadow: none !important;
+}
+
+#sponsers .sponser_brand {
+  width: 50px;
+  height: auto;
+  transition: all 250ms ease;
+}
+
+#sponsers .sponser_brand:hover {
+  transform: scale(1.25);
+  cursor: pointer;
+}
+
+footer {
+  width: 99% !important;
+}
+
+footer .sub {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+footer .main {
+  font-size: 35px;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  line-height: 45px;
+}
+
+footer .btn {
+  border: 2px solid #b1b4c1;
+  padding: 15px 40px;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: all 300ms ease;
+}
+
+footer .btn:hover {
+  color: #f9004d;
+  background: #fff;
+  transform: translate(0, -10px);
+}
+
+footer .contact_card {
+  background: linear-gradient(145deg, #f81f01 0%, #ee076e 100%);
+  padding: 60px;
+  border-radius: 5px;
+}
+
+footer .quick_links .list-group-item {
+  background: #212529;
+}
+
+footer .quick_links .list-group-item a {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+footer .social_icons img {
+  width: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+  #home .hero_content {
+    padding-top: 195px;
+    padding-bottom: 150px;
+    min-height: auto;
+    text-align: center;
+  }
+  #home .hero_content .title {
+    font-size: 100px;
+  }
+  #home .hero_content .hero_desc {
+    color: #c6c9d8;
+    font-size: 24px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0 16%;
+    font-weight: 300;
+  }
+  #home .hero_content .cta_btn {
+    color: #c6c9d8;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid #b1b4c1;
+    padding: 15px 40px;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 500;
+    margin-top: 25px;
+  }
+  #service .card {
+    padding: 35px 60px;
+  }
+  #about {
+    padding: 80px 0;
+  }
+  #about .about_title,
+  #portfolio .title,
+  #team .title,
+  #blog .title,
+  #contact .title {
+    margin-bottom: 8px;
+    font-size: 60px;
+    font-weight: 700;
+  }
+  #portfolio_numbers .num {
+    font-size: 72px;
+    line-height: 80px;
+  }
+  #testimonial .testimonial_big_text {
+    font-size: 36px;
+    line-height: 58px;
+    color: #18181b;
+    font-weight: 500;
+    padding: 0 9%;
+    margin-bottom: 0;
+    margin-top: -16px;
+    text-align: center;
+  }
+  .testimonials_photos img,
+  #sponsers .sponser_brand {
+    width: 70px;
+  }
+  #sponsers .sponser_brand {
+    width: 100px;
+    height: auto;
+  }
+  #testimonial .testimonial_big_text::before,
+  #testimonial .testimonial_big_text::after {
+    font-size: 3rem;
+  }
+  footer .main {
+    font-size: 75px;
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif;
+    line-height: 90px;
+  }
+
+  footer .contact_card {
+    padding: 120px;
+  }
+
+  footer #links {
+    height: 90%;
+  }
+}
